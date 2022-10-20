@@ -1,0 +1,353 @@
+* {
+    font-family: outfit;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+/* navbar */
+nav{
+    display: flex;
+    align-items: center;
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    background-color: white;
+}
+
+.navLogo{
+    flex-basis: 30%;
+    text-align: center;
+}
+
+.navLogo h3{
+    font-size: 1.5rem;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.navBar{
+    flex-basis: 70%;
+    text-align: center;
+}
+
+.navBar ul li{
+    display: inline-block;
+    cursor: pointer;
+    padding: 0 20px;
+}
+
+.navBar ul li a{
+    text-decoration: none;
+    color: #222;
+}
+
+.navBar ul li a:hover{
+    color: #228B22;
+    transition: 0.3s;
+}
+
+.navLogo h3:hover{
+    color: #228B22;
+    transition: 0.5s;
+}
+
+.navBar ul i{
+    cursor: pointer;
+}
+
+.navBar ul i:hover{
+    color: #228B22;
+    transition: 0.3s;
+}
+
+/* banner */
+.banner{
+    display: flex;
+    align-items: center;
+    padding: 100px 200px 50px;
+}
+
+.bannerText{
+    flex-basis: 50%;
+}
+
+.bannerText h1{
+    font-size: 4rem;
+    color: #228B22;
+    padding-bottom: 20px;
+}
+
+.bannerText h3{
+    font-size: 3rem;
+    font-weight: 500;
+    padding-bottom: 30px;
+    color: #222;
+}
+
+.btn button{
+    padding: 15px 20px;
+    border: #228B22 2px solid;
+    border-radius: 5px;
+    background-color: #228B22;
+    color: white;
+    cursor: pointer;
+    font-size: 0.9rem;
+}
+
+.btn button:hover{
+    border: #228B22 2px solid;
+    background-color: transparent;
+    color: #222;
+    transition: 0.8s;
+}
+
+.bannerImg{
+    flex-basis: 50%;
+}
+
+.bannerImg img {
+    background-position: center;
+    background-size: cover;
+    text-align: center;
+    width: 600px;
+}
+
+/* About us */
+#aboutUs{
+    display: flex;
+    align-items: center;
+    margin: 50px 200px;
+}
+
+.aboutImg{
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+.aboutImg img{
+    width: 400px;
+    border-radius: 10px;
+}
+
+
+.aboutText{
+    flex-basis: 50%;
+    padding: 30px;
+}
+
+.aboutText .aboutTitle{
+    font-size: 1.2rem;
+    color: #228B22;
+    padding-bottom: 20px;
+}
+
+.aboutText h1{
+    font-size: 3rem;
+    padding-bottom: 30px;
+    color: #222;
+}
+
+.aboutText span{
+    color: #228B22;
+}
+
+.aboutText p{
+    color: #333;
+    padding-bottom: 40px;
+}
+
+/* services */
+#services{
+    text-align: center;
+    padding: 50px 200px;
+}
+
+.servicesTitle p{
+    color: #228B22;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.servicesTitle h1{
+    font-size: 2.5rem;
+    color: #222;
+}
+
+.servicesContainer{
+    display: grid;
+    grid-template-columns: repeat(3 , 1fr);
+    column-gap: 50px;
+    margin-top: 50px;
+    justify-items: center;
+}
+
+.servicesImg{
+    fill: #228B22;
+    width: 64px;
+    height: 64px;
+    margin-bottom: 20px;
+}
+
+.servicesh1{
+    color: #222;
+    font-size: 1.5rem;
+    padding-bottom: 10px;
+}
+
+.servicesp{
+    padding: 0 10px;
+}
+
+/* menu */
+#menu{
+    padding: 50px 200px;
+}
+
+.menuText p{
+    color: #228B22;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+    text-align: center;
+}
+
+.menuText h1{
+    font-size: 2.5rem;
+    color: #222;
+    text-align: center;
+}
+
+.menuContainer{
+    display: grid;
+    grid-template-columns: repeat(3 , 300px);
+    gap: 50px;
+    justify-content: space-between;
+    margin: 50px 80px;
+}
+
+.menuBox{
+    box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    border-radius: 10px;
+    padding: 50px 0px 0;
+    cursor: pointer;
+}
+
+.menuBox:hover{
+    box-shadow: 0 3px 10px rgb(34 139 34 / 0.8);
+    transition: 0.8s;
+}
+
+.menuImg{
+    padding: 0 50px 20px;
+}
+
+.menuh3{
+    color: #222;
+    padding: 0 20px;
+    font-size: 1.5rem;
+}
+
+.menup{
+    color: rgba(34, 34, 34, 0.836);
+    padding: 0 20px;
+    font-size: 1.2rem;
+}
+
+.menuprice{
+    color: #222;
+    padding: 5px 20px;
+}
+
+.menuBtn{
+    text-align: end;
+}
+
+.menuBtn button{
+    padding: 10px 15px;
+    border-radius: 10px 0 10px 0;
+}
+
+/* app */
+#app{
+    display: flex;
+    align-items: center;
+    margin: 50px 200px;
+}
+
+.appImg{
+    flex-basis: 50%;
+}
+
+.appImg img{
+    width: 500px;
+}
+
+.appText{
+    flex-basis: 50%;
+}
+
+.appText .appTitle{
+    color: #228B22;
+    font-size: 1.2rem;
+    padding-bottom: 10px;
+}
+
+.appText h1{
+    font-size: 2.5rem;
+    color: #222;
+    padding: 20px 0;
+}
+
+.appText p{
+    color: #333;
+    padding-bottom: 40px;
+}
+
+.appText .store{
+    display: inline-block;
+}
+
+.store img{
+    width: 200px;
+    padding-left: 10px;
+}
+
+/* contact */
+#contact{
+    display: flex;
+    align-items: center;
+    margin: 50px 200px;
+}
+
+.contactText{
+    flex-basis: 60%;
+}
+
+.contactText .contactTitle{
+    color: #228B22;
+    font-size: 1.2rem;
+}
+
+.contactText h1{
+    font-size: 2.5rem;
+    color: #222;
+    padding: 10px 0 20px;
+}
+
+.contactText p{
+    color: #333;
+}
+
+#contact .btn{
+    flex-basis: 40%;
+    text-align: center;
+}
+
+#contact .btn button{
+    padding: 15px 30px;
+    font-size: 1.1rem;
+}
