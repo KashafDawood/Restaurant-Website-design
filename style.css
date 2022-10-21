@@ -355,7 +355,7 @@ nav{
 /* footer */
 #footer{
     display: flex;
-    margin: 100px 200px;
+    margin: 100px 200px 0;
 }
 
 .footerSocials{
@@ -411,4 +411,28 @@ nav{
 .footerLinks:hover{
     color: #228B22;
     transition: 1s;
+}
+
+/* fixed btn */
+.fixedBtn{
+    text-align: end;
+    z-index: 1;
+    overflow: hidden;
+}
+
+.fixedBtn button{
+    background-color: #228B22;
+    border: #228B22 2px solid;
+    border-radius: 3px;
+    margin: 0 100px 30px;
+}
+
+.fixedBtn button a{
+    text-decoration: none;
+    font-size: 1.5rem;
+    color: white;
+}
+
+.fixedBtn button a i{
+    padding: 5px 5px;
 }
