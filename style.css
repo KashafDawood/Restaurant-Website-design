@@ -351,3 +351,64 @@ nav{
     padding: 15px 30px;
     font-size: 1.1rem;
 }
+
+/* footer */
+#footer{
+    display: flex;
+    margin: 100px 200px;
+}
+
+.footerSocials{
+    flex-basis: 25%;
+}
+
+.footerSocials h3{
+    color: #228B22;
+    font-size: 1.5rem;
+}
+
+.footerSocials p{
+    font-size: 1.1rem;
+    color: rgba(34, 34, 34, 0.712);
+    padding: 10px 0;
+}
+
+.footerSocials .social .bx{
+    padding-right: 10px;
+    font-size: 1.2rem;
+    cursor: pointer;
+}
+
+.footerSocials .social .bx:hover{
+    color: #228B22;
+    transition: 0.5s;
+}
+
+.footerServices{
+    flex-basis: 25%;
+}
+
+.footerInformation{
+    flex-basis: 25%;
+}
+
+.footerAdress{
+    flex-basis: 25%;
+}
+
+.footerTitle{
+    font-size: 1.5rem;
+    color: #222;
+}
+
+.footerLinks{
+    font-size: 1.1rem;
+    color: rgba(34, 34, 34, 0.712);
+    padding: 3px 0;
+    cursor: pointer;
+}
+
+.footerLinks:hover{
+    color: #228B22;
+    transition: 1s;
+}
