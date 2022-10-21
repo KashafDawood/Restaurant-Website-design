@@ -114,7 +114,7 @@ nav{
     background-position: center;
     background-size: cover;
     text-align: center;
-    width: 600px;
+    width: 450px;
 }
 
 /* About us */
@@ -224,8 +224,8 @@ nav{
 .menuContainer{
     display: grid;
     grid-template-columns: repeat(3 , 300px);
-    gap: 50px;
-    justify-content: space-between;
+    gap: 30px;
+    justify-content: space-around;
     margin: 50px 80px;
 }
 
@@ -435,4 +435,21 @@ nav{
 
 .fixedBtn button a i{
     padding: 5px 5px;
+}
+
+@media screen and (min-width: 1001px) and (max-width: 1230px){
+    /* banner */
+    .banner{
+        padding: 100px 100px 50px;
+    }
+
+    #aboutUs , #app , #contact , #footer{
+        margin: 50px 100px;
+    }
+
+    /* services */
+    #services , #menu{
+        padding: 50px 100px;
+    }
+
 }
