@@ -75,13 +75,19 @@ nav{
 }
 
 .MnavContainer{
+    position: fixed;
+    width: 100%;
+    top: 0;
     display: flex;
-    margin: 20px 20px;
+    padding: 20px 20px;
     align-items: center;
+    z-index: 3;
+    background-color: white;
 }
 
 .MnavLogo{
     flex-basis: 50%;
+
 }
 
 .MnavLogo h3{
@@ -107,43 +113,44 @@ nav{
     padding-right: 30px;
 }
 
-.MnavBar{
+#MnavBar{
     width: 100%;
     height: 100%;
     padding: 100px;
     position: fixed;
-    left: 700px;
-    background-color: #228B22;
+    right: -750px;
+    background-color: white;
+    transition: 0.8s;
     z-index: 2;
 }
 
-.MnavBar ul li{
+#MnavBar ul li{
     cursor: pointer;
     padding: 0 20px;
     list-style-type: none;
     padding: 15px 0;
 }
 
-.MnavBar ul li a{
+#MnavBar ul li a{
     text-decoration: none;
     color: #222;
 }
 
-.MnavBar ul li a:hover{
+#MnavBar ul li a:hover{
     color: #228B22;
     transition: 0.3s;
 }
 
-.MnavLogo h3:hover{
+#MnavLogo h3:hover{
     color: #228B22;
     transition: 0.5s;
 }
 
-.MnavBar ul i{
+#MnavBar ul i{
     cursor: pointer;
 }
 
-.MnavBar ul i:hover{
+#MnavBar ul i:hover{
     color: #228B22;
     transition: 0.3s;
 }
@@ -569,7 +576,7 @@ nav{
     }
 
     .bannerImg img {
-        width: 350px;
+        width: 300px;
     }
 
     /* about */
@@ -697,26 +704,27 @@ nav{
     }
 
     .humbNav{
-        display: none;
+        display: block;
     }
 
     /* banner */
     .banner{
-        padding: 100px 30px 50px;
+        padding: 150px 50px 50px;
+        display: block;
     }
 
     .bannerText h1{
-        font-size: 1.5rem;
+        font-size: 2.5rem;
     }
     
     .bannerText h3{
-        font-size: 1rem;
+        font-size: 1.5rem;
         font-weight: 400;
     }
 
     .btn button{
         padding: 5px 10px;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     .bannerImg{
@@ -724,25 +732,22 @@ nav{
     }
 
     .bannerImg img {
-        width: 100px;
+        width: 250px;
+        padding: 30px 0 0;
     }
 
     /* about */
     #aboutUs{
-        margin: 30px;
+        margin: 50px;
+        display: block;
     }
 
     .aboutImg{
-        padding: 5px;
-        text-align: center;
-    }
-
-    .aboutImg img{
-        width: 100px;
+        display: none;
     }
 
     .aboutText .aboutTitle{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-bottom: 10px;
     }
 
@@ -751,27 +756,28 @@ nav{
     }
 
     .aboutText h1{
-        font-size: 1rem;
-        padding-bottom: 10px;
+        font-size: 1.5rem;
+        padding-bottom: 30px;
     }
 
     .aboutText p{
-        font-size: 0.5rem;
+        font-size: 0.9rem;
         padding-bottom: 20px;
+        max-width: 400px;
     }
 
     /* services */
     #services{
-        padding: 30px;
+        padding: 30px 50px;
     }
 
     .servicesTitle p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-bottom: 5px;
     }
 
     .servicesTitle h1{
-        font-size: 1rem;
+        font-size: 1.5rem;
     }
 
     .servicesContainer{
@@ -781,26 +787,27 @@ nav{
     }
 
     .servicesh1{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
 
     .servicesp{
-        font-size: 0.6rem;
+        font-size: 0.8rem;
         font-weight: 300;
+        max-width: 400px;
     }
 
     /* menu */
     #menu{
-        padding: 30px;
+        padding: 30px 50px;
     }
 
     .menuText p{
-        font-size: 0.8rem;
+        font-size: 1rem;
         padding-bottom: 5px;
     }
 
     .menuText h1{
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 
     .menuContainer{
@@ -835,60 +842,66 @@ nav{
     }
 
     .menuBtn button i{
-        font-size: 0.8rem;
+        font-size: 0.6rem;
     }
 
     /* app */
     #app{
-        margin: 30px;
+        margin: 30px 50px;
+        display: block;
+    }
+
+    .appImg{
+        text-align: center;
     }
 
     .appImg img{
-        width: 150px;
+        width: 200px;
     }
 
     .appText .appTitle{
-        font-size: 0.8rem;
-        padding-bottom: 5px;
+        font-size: 1rem;
+        padding-bottom: 10px;
     }
     
 
     .appText h1{
-        font-size: 1rem;
-        padding: 10px 0;
+        font-size: 1.5rem;
+        padding: 20px 0;
     }
 
     .appText p{
         padding-bottom: 20px;
-        font-size: 0.5rem;
+        font-size: 0.8rem;
+        max-width: 400px;
     }
 
     .store img{
-        width: 60px;
+        width: 100px;
         padding-left: 5px;
     }
     
     /* contact */
     #contact{
-        margin: 30px;
+        margin: 30px 50px;
     }
 
     .contactText .contactTitle{
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
 
     .contactText h1{
-        font-size: 1rem;
-        padding: 5px 0 10px;
+        font-size: 1.5rem;
+        padding: 5px 0 20px;
     }
 
     .contactText p{
-        font-size: 0.5rem;
+        font-size: 0.8rem;
     }
 
     #contact .btn button{
         padding: 5px 10px;
-        font-size: 0.4rem;
+        font-size: 0.7rem;
     }
 
     /* footer */
@@ -897,7 +910,7 @@ nav{
     }
 
     .footerSocials h3{
-        font-size: 0.5rem;
+        font-size: 0.6rem;
     }
 
     .footerSocials p{
@@ -906,16 +919,16 @@ nav{
     }
 
     .footerSocials .social .bx{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
         padding-right: 5px;
     }
 
     .footerTitle{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
 
     .footerLinks{
-        font-size: 0.4rem;
+        font-size: 0.5rem;
     }
     
     .fixedBtn button{
