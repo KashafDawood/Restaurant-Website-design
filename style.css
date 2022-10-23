@@ -9,9 +9,6 @@ html{
     scroll-behavior: smooth;
 }
 
-.hidden{
-    display: none;
-}
 
 /* navbar */
 nav{
@@ -60,14 +57,6 @@ nav{
     transition: 0.5s;
 }
 
-.navBar ul i{
-    cursor: pointer;
-}
-
-.navBar ul i:hover{
-    color: #228B22;
-    transition: 0.3s;
-}
 
 /* humburger menu */
 .humbNav{
@@ -83,6 +72,7 @@ nav{
     align-items: center;
     z-index: 3;
     background-color: white;
+    cursor: pointer;
 }
 
 .MnavLogo{
@@ -149,14 +139,6 @@ nav{
     transition: 0.5s;
 }
 
-#MnavBar ul i{
-    cursor: pointer;
-}
-
-#MnavBar ul i:hover{
-    color: #228B22;
-    transition: 0.3s;
-}
 
 /* banner */
 .banner{
